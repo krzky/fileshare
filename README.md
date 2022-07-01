@@ -106,14 +106,11 @@ For more database setup at: <a href='https://www.tecmint.com/install-postgresql-
 * `{previouscaption}` - Original Caption
 
 
-## Support   
+### Support   
 Join and support our Coders
 
-[Telegram Group](https://www.telegram.dog/codexbotzsupport & https://t.me/SharingUserbot) For Support/Assistance 
-
-And
-
-[Channel](https://www.telegram.dog/codexbotz & https://t.me/Lunatic0de) For Updates.   
+* [Telegram Group] (https://www.telegram.dog/codexbotzsupport & https://t.me/SharingUserbot) For Support/Assistance
+* [Channel] (https://www.telegram.dog/codexbotz & https://t.me/Lunatic0de) For Updates.
    
 Report Bugs, Give Feature Requests There..   
 

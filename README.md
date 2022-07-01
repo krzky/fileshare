@@ -11,7 +11,7 @@
     <img src="https://github.com/CodeXBotz/PyrogramGenStr/blob/main/resources/madebycodex-badge.svg" width="250">
   </a>
   <a href="https://t.me/mrizmanaziz">
-    <img src="https://github.com/CodeXBotz/PyrogramGenStr/blob/main/resources/madebycodex-badge.svg" width="250">
+    <img src="https://github.com/krzky/repos/blob/d7996ae9823b4cdef59bd685b5fa4e6a753e8774/resources/WATERMARK-badge.svg" width="250">
   </a>
 </p>
 

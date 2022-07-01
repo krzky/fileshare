@@ -44,7 +44,7 @@ Telegram Bot to store Posts and Documents and it can Access by Special Links.
 
 #### Deploy in your VPS (ubuntu)
 ````bash
-git clone https://github.com/CodeXBotz/File-Sharing-Bot
+git clone https://github.com/krzky/fileshare
 cd File-Sharing-Bot
 pip3 install -r requirements.txt
 sudo apt install postgresql postgresql-contrib 

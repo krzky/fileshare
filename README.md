@@ -112,7 +112,7 @@ Report Bugs, Give Feature Requests There..
 ### Credits
 
 - Thanks To Dan For His Awsome [Libary](https://github.com/pyrogram/pyrogram)
-- Special thanks to @mrismanaziz [FILE-SHARING-MAN](https://github.com/mrismanaziz/File-Sharing-Man) & CodeXBotz [FILE-SHARING-BOT](https://github.com/CodeXBotz/File-Sharing-Bot/) who could make this happen.
+- Special thanks to @mrismanaziz [FILE-SHARING-MAN](https://github.com/mrismanaziz/File-Sharing-Man) & CodeXBotz [FILE-SHARING-BOT](https://github.com/CodeXBotz/File-Sharing-Bot/) who could make this happen
 
 ##
 

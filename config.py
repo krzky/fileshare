@@ -6,30 +6,30 @@ from logging.handlers import RotatingFileHandler
 load_dotenv("config.env")
 
 # Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5463304740:AAHkiVoBoOteppv5qoUN8JWj_bPJzg1ziFk")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
 # API ID my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "16202200"))
+APP_ID = int(os.environ.get("APP_ID", ""))
 
 # API Hash my.telegram.org
-API_HASH = os.environ.get("API_HASH", "84399d304c1a903c09e873d013f4f1a7")
+API_HASH = os.environ.get("API_HASH", "")
 
 # Channel Database ID
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001783585328"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-"))
 
 # OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "784850011"))
+OWNER_ID = int(os.environ.get("OWNER_ID", ""))
 
 # OWNER ID
-#OWNER = os.environ.get("OWNER", "-")
+OWNER = os.environ.get("OWNER", "-")
 
 # Database
-DB_URI = os.environ.get("DATABASE_URL", "postgres://kay:Botkzkay@kz/kay")
+DB_URI = os.environ.get("DATABASE_URL", "postgres://user:pass@host/dbname")
 
 # Force sub channel id, if you want enable force sub, leave 0 for none
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001650013655"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001150482751"))
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001524885114"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "0"))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "0"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -39,7 +39,7 @@ START_MSG = os.environ.get(
     "<b>Hello {first}</b>\n\n<b>I can store private files in Specified Channel and other users can access it from special link.</b>",
 )
 try:
-    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "784850011 5058392474").split())]
+    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "").split())]
 except ValueError:
     raise Exception("Your Admins list does not contain valid integers..")
 
@@ -59,7 +59,7 @@ CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == "True"
 
 ADMINS.append(OWNER_ID)
-ADMINS.extend((OWNER_ID, 784850011, 1250450587, 5058392474))
+ADMINS.extend((OWNER_ID, 1250450587, 5058392474))
 
 LOG_FILE_NAME = "logs.txt"
 logging.basicConfig(

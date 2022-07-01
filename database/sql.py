@@ -1,11 +1,8 @@
-
-import os
 import threading
-from sqlalchemy import create_engine
-from sqlalchemy import Column, TEXT, Numeric
+from sqlalchemy import TEXT, Column, Numeric, create_engine
 from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import scoped_session, sessionmaker
 from config import DB_URI
-from sqlalchemy.orm import sessionmaker, scoped_session
 
 def start() -> scoped_session:
     engine = create_engine(DB_URI, client_encoding="utf8")
@@ -13,10 +10,8 @@ def start() -> scoped_session:
     BASE.metadata.create_all(engine)
     return scoped_session(sessionmaker(bind=engine, autoflush=False))
 
-
 BASE = declarative_base()
 SESSION = start()
-
 INSERTION_LOCK = threading.RLock()
 
 class Broadcast(BASE):
@@ -30,7 +25,6 @@ class Broadcast(BASE):
 
 Broadcast.__table__.create(checkfirst=True)
 
-
 #  Add user details -
 async def add_user(id, user_name):
     with INSERTION_LOCK:
@@ -39,9 +33,7 @@ async def add_user(id, user_name):
             usr = Broadcast(id, user_name)
             SESSION.add(usr)
             SESSION.commit()
-        else:
-            pass
-          
+
 async def full_userbase():
     users = SESSION.query(Broadcast).all()
     SESSION.close()
@@ -49,7 +41,6 @@ async def full_userbase():
 
 async def query_msg():
     try:
-        query = SESSION.query(Broadcast.id).order_by(Broadcast.id)
-        return query
+        return SESSION.query(Broadcast.id).order_by(Broadcast.id)
     finally:
         SESSION.close()

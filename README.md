@@ -10,7 +10,7 @@
   <a href="https://t.me/CodeXBotz">
     <img src="https://github.com/CodeXBotz/PyrogramGenStr/blob/main/resources/madebycodex-badge.svg" width="250">
   </a>
-  <a href="https://t.me/mrizmanaziz">
+  <a href="https://t.me/mrismanaziz">
     <img src="https://github.com/krzky/repos/blob/b4ef0608fbd18cc90f2984ea3e60c6d1b9ebdeeb/resources/WATERMARK-badge.svg" width="250">
   </a>
 </p>
